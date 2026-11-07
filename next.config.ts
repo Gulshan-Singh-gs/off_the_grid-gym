@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 
+// Cloudflare Pages Static HTML Export configuration
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
