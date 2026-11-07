@@ -86,9 +86,6 @@ id_rsa.pub
 tmp/
 temp/
 
-# Application inner build artifacts (if tracking application in root git)
-application/node_modules/
-application/dist/
-application/*.local
-application/*.log
-application/otg_gym_local_db.json
+# Admin desktop / PWA application (tracked in its own repository)
+/application/
+
