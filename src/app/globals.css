@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #08090b;
+    --surface-1: #0e1117;
+    --surface-2: #151922;
+    --surface-3: #1d222e;
+    --foreground: #f3f4f6;
+    --foreground-muted: #9ca3af;
+    --accent: #00ff66;
+    --accent-glow: rgba(0, 255, 102, 0.25);
+    --accent-dim: #10b981;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+  }
+
+  * {
+    border-color: var(--border-subtle);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom athletic selection highlight */
+  ::selection {
+    background-color: #00ff66;
+    color: #08090b;
+  }
+}
+
+/* Custom Utilities for Off The Grid styling */
+.text-accent {
+  color: #00ff66;
+}
+
+.bg-accent {
+  background-color: #00ff66;
+}
+
+.border-accent {
+  border-color: #00ff66;
+}
+
+.glow-accent {
+  box-shadow: 0 0 25px rgba(0, 255, 102, 0.35);
+}
+
+.glow-subtle {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.7);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 255, 102, 0.08) 0%, transparent 60%);
+}
+
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
