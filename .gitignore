@@ -85,3 +85,10 @@ id_rsa.pub
 .cache/
 tmp/
 temp/
+
+# Application inner build artifacts (if tracking application in root git)
+application/node_modules/
+application/dist/
+application/*.local
+application/*.log
+application/otg_gym_local_db.json
