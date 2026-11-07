@@ -43,6 +43,14 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
+  icons: {
+    icon: [
+      { url: '/icon.webp', type: 'image/webp' },
+      { url: '/logo.webp', type: 'image/webp' },
+    ],
+    shortcut: '/icon.webp',
+    apple: '/icon.webp',
+  },
   alternates: {
     canonical: '/',
   },

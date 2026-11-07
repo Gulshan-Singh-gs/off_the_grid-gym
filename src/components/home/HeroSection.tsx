@@ -42,6 +42,18 @@ export default function HeroSection({ settings }: HeroSectionProps) {
 
       {/* Central Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8">
+        {/* Official Brand Emblem */}
+        <div className="flex justify-center mb-5">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-black/90 border border-[#00ff66]/40 p-2 shadow-[0_0_30px_rgba(0,255,102,0.25)] flex items-center justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.webp"
+              alt="Off The Grid Gym Emblem"
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+
         {/* Location & Status Tag */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
           <span className="relative flex h-2.5 w-2.5">

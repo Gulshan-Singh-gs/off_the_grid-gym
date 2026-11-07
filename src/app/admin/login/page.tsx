@@ -58,8 +58,13 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-md">
         {/* Brand header */}
         <div className="text-center mb-8">
-          <div className="inline-flex w-14 h-14 rounded-2xl bg-[#0e1217] border border-[#00ff66]/40 items-center justify-center text-[#00ff66] mb-4 shadow-[0_0_25px_rgba(0,255,102,0.2)]">
-            <Dumbbell className="w-8 h-8 -rotate-45" />
+          <div className="inline-flex w-16 h-16 rounded-2xl bg-black border border-[#00ff66]/40 p-1.5 items-center justify-center mb-4 shadow-[0_0_25px_rgba(0,255,102,0.25)] overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.webp"
+              alt="Off The Grid Gym Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <h1 className="text-2xl sm:text-3xl font-black uppercase text-white tracking-tight">
             Off The Grid Gym

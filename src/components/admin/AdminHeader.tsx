@@ -34,8 +34,13 @@ export default function AdminHeader({ activeTab, onTabChange }: AdminHeaderProps
         <div className="flex items-center justify-between h-16">
           {/* Logo & Title */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#0e1217] border border-[#00ff66]/40 flex items-center justify-center text-[#00ff66]">
-              <Dumbbell className="w-5 h-5 -rotate-45" />
+            <div className="w-10 h-10 rounded-lg bg-black border border-[#00ff66]/40 p-1 flex items-center justify-center overflow-hidden shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo.webp"
+                alt="Off The Grid Gym Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <span className="text-base font-black text-white uppercase tracking-tight">

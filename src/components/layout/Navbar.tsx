@@ -101,8 +101,13 @@ export default function Navbar() {
               href="/"
               className="flex items-center gap-3 group focus:outline-none"
             >
-              <div className="w-11 h-11 rounded-lg bg-[#0e1217] border border-[#00ff66]/40 flex items-center justify-center group-hover:border-[#00ff66] group-hover:shadow-[0_0_15px_rgba(0,255,102,0.3)] transition-all">
-                <Dumbbell className="w-6 h-6 text-[#00ff66] transform -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
+              <div className="w-11 h-11 rounded-lg bg-black border border-[#00ff66]/40 p-1 flex items-center justify-center group-hover:border-[#00ff66] group-hover:shadow-[0_0_15px_rgba(0,255,102,0.3)] transition-all overflow-hidden shrink-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.webp"
+                  alt="Off The Grid Gym Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans leading-none flex items-center gap-1.5">
